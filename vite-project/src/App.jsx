@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { FaMoon, FaSun } from 'react-icons/fa'
 
 const App = () => {
 
@@ -25,8 +26,8 @@ useEffect(() => {
     className='bg-yellow-400 dark:bg-yellow-300 rounded-md p-2'
     onClick={toggleDisplayMode}>
       {darkMode 
-      ? <div><span></span></div>
-      : }
+      ? <div className='flex items-center justify-center'><span className='mr-2'>Set To Light</span><FaSun/></div>
+      : <div className='flex items-center justify-center'><span className='mr-2'>Set To Dark</span><FaMoon/></div>}
     </button>
       </div>
     </div>
