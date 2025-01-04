@@ -14,8 +14,21 @@ useEffect(() => {
   setDarkMode(saveMode === 'dark' ? true : false)
 }, [])
 
+  const toggleDisplayMode = () => {
+    
+  }
+
   return (
-    <div>App</div>
+    <div className={`${darkMode ? 'dark' : ''}`}>
+      <div className='dark:bg-gray-700 w-screen h-screen flex items-center justify-center'>
+    <button
+    className=''
+    onClick={toggleDisplayMode}
+    >
+      {}
+    </button>
+      </div>
+    </div>
   )
 }
 
